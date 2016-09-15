@@ -1,0 +1,227 @@
+
+    html
+    {
+        height:                         100%;
+    }
+
+    body.welcome
+    {
+        background:                     #ffffff;
+
+        margin:                         0;
+        overflow:                       auto;
+        text-align:                     center;
+
+        font-family:                    raleway, arial, sans-serif;
+        font-size:                      24px;
+        font-style:                     normal;
+        font-weight:                    500;
+        text-decoration:                none;
+/*
+        background:                     no-repeat left bottom url( ../../res/image/mayflowerLogo.png );
+*/
+    }
+
+    a
+    {
+        text-decoration:                none;
+    }
+
+    div.container-table
+    {
+        display:                        table;
+        width:                          100%;
+        height:                         auto;
+        margin:                         100px 0 100px 0;
+    }
+
+    div.container-cell
+    {
+        display:                        table-cell;
+        width:                          100%;
+        height:                         auto;
+
+        -webkit-perspective:            800px;
+        perspective:                    800px;
+        -webkit-perspective-origin:     top center;
+        perspective-origin:             top center;
+        vertical-align:                 middle;
+    }
+
+    div.container-main
+    {
+        display:                        inline-block;
+        overflow:                       hidden;
+        padding:                        25px;
+        vertical-align:                 top;
+
+        -webkit-transform-style:        preserve-3d;
+        transform-style:                preserve-3d;
+        will-change:                    transform;
+
+        background:                     #e0e0e0;
+
+        border:                         1px solid #505050;
+        outline:                        1px solid transparent;
+    }
+
+    div.left
+    {
+        float:                          left;
+        overflow:                       hidden;
+        vertical-align:                 top;
+        margin:                         0;
+    }
+
+    div.right
+    {
+        float:                          right;
+        overflow:                       hidden;
+        vertical-align:                 top;
+        margin:                         0;
+    }
+
+    @media ( max-width: 850px )
+    {
+        div.left
+        {
+            float:                      none;
+        }
+    }
+
+    figure.logo
+    {
+        max-width:                      300px;
+        border-radius:                  150px;
+        border:                         1px solid #505050;
+
+        margin:                         0 auto 0 auto;
+        padding:                        0;
+        overflow:                       hidden;
+
+        background:                     #ffffff;
+    }
+
+    figure.button
+    {
+        float:                          left;
+
+        width:                          130px;
+        height:                         130px;
+        border-radius:                  65px;
+        border:                         1px solid #505050;
+
+        color:                          #202020;
+        background:                     #ffffff;
+
+        margin:                         0 0 0 20px;
+        overflow:                       hidden;
+
+        font-size:                      13px;
+        text-decoration:                none;
+
+        -webkit-transition:             color 0.5s ease-in-out 0s, background-color 0.5s ease-in-out 0s, border-color 0.5s ease-in-out 0s;
+        -moz-transition:                color 0.5s ease-in-out 0s, background-color 0.5s ease-in-out 0s, border-color 0.5s ease-in-out 0s;
+        -o-transition:                  color 0.5s ease-in-out 0s, background-color 0.5s ease-in-out 0s, border-color 0.5s ease-in-out 0s;
+        transition:                     color 0.5s ease-in-out 0s, background-color 0.5s ease-in-out 0s, border-color 0.5s ease-in-out 0s;
+    }
+
+    @media ( max-width: 550px )
+    {
+        figure.button
+        {
+            float:                      none;
+            margin:                     20px auto 0 auto;
+        }
+    }
+
+    figure.button:hover
+    {
+        background:                     #e30613;
+        color:                          #ffffff;
+        border:                         1px solid #8a0d14;
+    }
+
+    h1,
+    h2
+    {
+        font-size:                      23px;
+        padding:                        0 0 0 15px;
+        line-height:                    1.5;
+
+        font-style:                     normal;
+        font-weight:                    500;
+
+        text-shadow:                    1px 1px 0 #ffffff;
+    }
+
+    h1
+    {
+        color:                          #e30613;
+        margin:                         20px 0 0 0;
+    }
+
+    h2
+    {
+        color:                          #202020;
+        margin:                         0 0 25px 0;
+    }
+
+    i.fa-github,
+    i.fa-calendar,
+    i.fa-gamepad
+    {
+        text-shadow:                    1px 1px 0 #ffffff;
+
+        -webkit-transition:             text-shadow 0.5s ease-in-out 0s;
+        -moz-transition:                text-shadow 0.5s ease-in-out 0s;
+        -o-transition:                  text-shadow 0.5s ease-in-out 0s;
+        transition:                     text-shadow 0.5s ease-in-out 0s;
+    }
+
+    figure.button:hover i.fa-github,
+    figure.button:hover i.fa-calendar,
+    figure.button:hover i.fa-gamepad
+    {
+        text-shadow:                    1px 1px 0 #000000;
+    }
+
+    i.fa-github
+    {
+        font-size:                      80px;
+        margin:                         18px 0 0 0;
+    }
+
+    i.fa-calendar
+    {
+        font-size:                      60px;
+        margin:                         28px 0 9px 0;
+    }
+
+    i.fa-gamepad
+    {
+        font-size:                      80px;
+        margin:                         15px 0 2px 0;
+    }
+
+    img.logo
+    {
+        max-width:                      300px;
+        width:                          100%;
+        height:                         auto;
+    }
+
+    figure.button span.caption
+    {
+        text-shadow:                    1.5px 1.5px 0 #ffffff;
+
+        -webkit-transition:             text-shadow 0.5s ease-in-out 0s;
+        -moz-transition:                text-shadow 0.5s ease-in-out 0s;
+        -o-transition:                  text-shadow 0.5s ease-in-out 0s;
+        transition:                     text-shadow 0.5s ease-in-out 0s;
+    }
+
+    figure.button:hover span.caption
+    {
+        text-shadow:                    1.5px 1.5px 0 #000000;
+    }

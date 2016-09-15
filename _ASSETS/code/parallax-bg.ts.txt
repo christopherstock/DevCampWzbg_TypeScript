@@ -1,0 +1,38 @@
+        /*****************************************************************************
+        *   Draws the bg using parallax scrolling.
+        *
+        *   @param context The 2D drawing context.
+        *   @param camera  The camera context to use for this drawing operation.
+        *****************************************************************************/
+/*
+        private drawLevelBg( context:CanvasRenderingContext2D, camera:MfgCamera )
+        {
+            //draw bg image
+            this.drawParallaxBg( context, camera, Mfg.game.imageSystem.getImage( MfgImage.BG_LAYER_0 ) );
+
+            //draw middle layer
+            this.drawParallaxBg( context, camera, Mfg.game.imageSystem.getImage( MfgImage.BG_LAYER_1 ) );
+        }
+*/
+        /*****************************************************************************
+        *   Draws a parallax scrolling bg image.
+        *
+        *   @param context The 2D drawing context.
+        *   @param camera  The current camera instance.
+        *   @param image   The image to draw into the bg.
+        *****************************************************************************/
+/*
+        private drawParallaxBg( context:CanvasRenderingContext2D, camera:MfgCamera, image:HTMLImageElement )
+        {
+            var imgWidth     =     image.width;
+            var imgHeight    =     image.height;
+
+            MfgDrawing.drawImage
+            (
+                context,
+                image,
+                0 - ( imgWidth  - Mfg.game.canvas.getWidth()  ) * camera.x / ( this.width  - Mfg.game.canvas.getWidth()  ),
+                0 - ( imgHeight - Mfg.game.canvas.getHeight() ) * camera.y / ( this.height - Mfg.game.canvas.getHeight() )
+            );
+        }
+*/
