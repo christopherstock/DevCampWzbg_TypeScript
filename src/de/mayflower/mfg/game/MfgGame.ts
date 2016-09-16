@@ -46,12 +46,10 @@
             );
             document.body.appendChild( this.canvas.getCanvasTag() );
 
-            MfgDrawing.drawPreloader( 0 );
+
 
             //attach listeners for keys and pointer
             this.keySystem = new MfgKeySystem();
-
-            MfgDrawing.drawPreloader( 20 );
 
             //load all images
             this.imageSystem = new MfgImageSystem
@@ -67,8 +65,6 @@
         *****************************************************************************/
         private initAfterImagesLoaded=()=>
         {
-            MfgDrawing.drawPreloader( 60 );
-
             //load all sounds
             this.soundSystem = new MfgSoundSystem(
                 MfgSound.FILE_NAMES
@@ -78,34 +74,15 @@
                 this.soundSystem.playSound( MfgSound.SOUND_BG_TD2 );
             }
 
-            MfgDrawing.drawPreloader( 80 );
+
 
             //init a new level
             this.level = new MfgLevel();
-
-            MfgDrawing.drawPreloader( 90 );
-
-            //init the camera
             this.camera = new MfgCamera();
-
-            MfgDrawing.drawPreloader( 95 );
-
-            //init the hud
             this.hud = new MfgHUD();
 
-            MfgDrawing.drawPreloader( 100 );
 
-            window.setTimeout( this.launchGame, 500 );
-        };
 
-        /*****************************************************************************
-        *   Starts the game.
-        *****************************************************************************/
-        public launchGame=()=>
-        {
-            //alter body color to black
-            var body:HTMLBodyElement = <HTMLBodyElement>document.querySelector( "body.mfg" );
-            body.style.backgroundColor = "#000000";
 
             //start the main thread
             window.setInterval( this.tick, MfgSetting.THREAD_DELAY );
@@ -116,12 +93,20 @@
         *****************************************************************************/
         public tick=()=>
         {
+
+
+
             this.hud.fpsMeter.tickStart();
+
+
 
             this.render();
             this.draw();
 
+
+
             this.hud.fpsMeter.tick();
+
         };
 
         /*****************************************************************************
@@ -129,6 +114,7 @@
         *****************************************************************************/
         private render()
         {
+
             this.level.render();
 
             this.camera.update
@@ -139,6 +125,7 @@
                 this.canvas.getHeight(),
                 this.level.player.rect
             );
+
         }
 
         /*****************************************************************************

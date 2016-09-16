@@ -30,5 +30,10 @@
                     heat:     0
                 }
             );
+
+            var options:FPSMeterOptions = this.fpsMeter.options;
+
+            options.heat = 1;
+
         }
     }

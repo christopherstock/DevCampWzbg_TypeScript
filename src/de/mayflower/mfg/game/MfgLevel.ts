@@ -240,12 +240,19 @@
 
             this.player.handlePlayerKeys();
 
+            this.player.clipToLevelBounds();
+
+
+
+this.player.moveDown();
+this.moveAllObstacles();
+
+
+
             if ( !MfgDebug.DEBUG_ENABLE_FREE_MOVEMENT )
             {
-                this.player.clipToLevelBounds();
-                this.player.moveDown();
 
-                this.moveAllObstacles();
+
                 this.checkCollision();
             }
         }

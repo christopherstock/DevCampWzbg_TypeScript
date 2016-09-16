@@ -65,7 +65,7 @@
                 this.pressed[ keyCode ] = true;
             }
 
-            //MfgDebug.log( "key pressed ["  + keyCode + "]" );
+            MfgDebug.log( "key pressed ["  + keyCode + "]" );
         };
 
         /*****************************************************************************
@@ -80,7 +80,7 @@
             this.pressed[      keyCode ] = false;
             this.needsRelease[ keyCode ] = false;
 
-            //MfgDebug.log( "key released ["  + keyCode + "]" );
+            MfgDebug.log( "key released ["  + keyCode + "]" );
         };
 
         /*****************************************************************************
