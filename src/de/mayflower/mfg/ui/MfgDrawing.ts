@@ -20,6 +20,8 @@
         /** The RGBA statement representing color 'yellow' with half opacity. */
         public      static      COLOR_YELLOW_TRANSLUCENT_50             :string         = "rgba( 255, 255, 0,   0.5  )";
 
+        public      static      COLOR_BLACK_OPAQUE                      :string         = "rgba( 0,   0,   0,   1.0  )";
+
         /*****************************************************************************
         *   Fills a rect with the specified dimensions and color.
         *

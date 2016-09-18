@@ -76,10 +76,10 @@
             this.camera = new MfgCamera();
             this.hud = new MfgHUD();
 
-            //hide preloader and show canvas
-            var preloaderDiv:HTMLDivElement = <HTMLDivElement>document.getElementById("preloader");
-            preloaderDiv.hidden = true;
+            //hide preloader, darken bg and show canvas
+            document.getElementById("preloader").hidden = true;
             document.body.appendChild( this.canvas.getCanvasTag() );
+            document.body.style.backgroundColor = MfgDrawing.COLOR_BLACK_OPAQUE;
 
             //start the main thread
             window.setInterval( this.tick, MfgSetting.THREAD_DELAY );
