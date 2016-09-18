@@ -2,7 +2,12 @@
     body.mfg
     {
         background-color:           #ffffff;
-        margin:                     auto;
+        margin:                     25px;
         overflow:                   hidden;
         text-align:                 center;
+    }
+
+    div.preloader
+    {
+        margin:                     270px 0 0 0;
     }

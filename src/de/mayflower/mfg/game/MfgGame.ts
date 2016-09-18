@@ -38,17 +38,14 @@
             document.title = MfgSetting.TITLE;
             MfgDebug.log( MfgSetting.TITLE );
 
-            //init canvas and append it's tag to the HTML page body
+            //create undeployed canvas
             this.canvas = new MfgCanvas
             (
                 MfgSetting.CANVAS_WIDTH,
                 MfgSetting.CANVAS_HEIGHT
             );
-            document.body.appendChild( this.canvas.getCanvasTag() );
 
-
-
-            //attach listeners for keys and pointer
+            //attach key listeners
             this.keySystem = new MfgKeySystem();
 
             //load all images
@@ -74,15 +71,15 @@
                 this.soundSystem.playSound( MfgSound.SOUND_BG_TD2 );
             }
 
-
-
             //init a new level
             this.level = new MfgLevel();
             this.camera = new MfgCamera();
             this.hud = new MfgHUD();
 
-
-
+            //hide preloader and show canvas
+            var preloaderDiv:HTMLDivElement = <HTMLDivElement>document.getElementById("preloader");
+            preloaderDiv.hidden = true;
+            document.body.appendChild( this.canvas.getCanvasTag() );
 
             //start the main thread
             window.setInterval( this.tick, MfgSetting.THREAD_DELAY );
@@ -93,20 +90,12 @@
         *****************************************************************************/
         public tick=()=>
         {
-
-
-
             this.hud.fpsMeter.tickStart();
-
-
 
             this.render();
             this.draw();
 
-
-
             this.hud.fpsMeter.tick();
-
         };
 
         /*****************************************************************************
@@ -114,7 +103,6 @@
         *****************************************************************************/
         private render()
         {
-
             this.level.render();
 
             this.camera.update
@@ -125,7 +113,6 @@
                 this.canvas.getHeight(),
                 this.level.player.rect
             );
-
         }
 
         /*****************************************************************************

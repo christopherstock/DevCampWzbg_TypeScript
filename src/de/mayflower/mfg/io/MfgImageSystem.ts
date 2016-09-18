@@ -61,7 +61,7 @@
         }
 
         /*****************************************************************************
-        *   This function is invoked each time <b>one</b> image has been fully loaded.
+        *   This function is invoked each time <strong>one</strong> image has been fully loaded.
         *****************************************************************************/
         private onImageLoaded=()=>
         {

@@ -236,23 +236,18 @@
         *****************************************************************************/
         public render()
         {
-            if ( this.player.crashed || this.player.won ) return;
+            if ( this.player.crashed || this.player.won )
+            {
+                return;
+            }
 
             this.player.handlePlayerKeys();
 
-            this.player.clipToLevelBounds();
-
-
-
-this.player.moveDown();
-this.moveAllObstacles();
-
-
-
             if ( !MfgDebug.DEBUG_ENABLE_FREE_MOVEMENT )
             {
-
-
+                this.player.moveDown();
+                this.player.clipToLevelBounds();
+                this.moveAllObstacles();
                 this.checkCollision();
             }
         }
