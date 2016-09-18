@@ -8,7 +8,7 @@
     class MfgDebug
     {
         /** Enables vertical movement. */
-        public      static      DEBUG_ENABLE_FREE_MOVEMENT                  :boolean            = true;
+        public      static      DEBUG_ENABLE_FREE_MOVEMENT                  :boolean            = false;
         /** Disables all images. */
         public      static      DEBUG_DISABLE_IMAGES                        :boolean            = false;
         /** Disables all sounds. */

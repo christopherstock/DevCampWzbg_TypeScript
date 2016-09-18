@@ -37,7 +37,7 @@
         /** The obstacle's moving speed for horizontal directions. */
         public      static      OBSTACLE_SPEED_MOVE_X                      :number             = 0.25;
         /** The obstacle's moving speed for vertical directions. */
-        public      static      OBSTACLE_SPEED_MOVE_Y                      :number             = 2.5;
+        public      static      OBSTACLE_SPEED_MOVE_Y                      :number             = 0.5;
 
         /** The relative path where all images the app makes use of reside. */
         public      static      PATH_IMAGE                                  :string             = "res/image/";
